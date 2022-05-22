@@ -3,10 +3,19 @@ import {HelloWorld} from './HelloWorld';
 import {Logo} from './HelloWorld/Logo';
 import {Subtitle} from './HelloWorld/Subtitle';
 import {Title} from './HelloWorld/Title';
+import {Kapadu} from './Kapadu';
 
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
+			<Composition
+				id="Kapadu"
+				component={Kapadu}
+				durationInFrames={150}
+				fps={30}
+				width={1920}
+				height={1080}
+			/>
 			<Composition
 				id="HelloWorld"
 				component={HelloWorld}
